@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stereo.ManualCalib.AngleActivity" >
+
+    <com.stereo.ManualCalib.myGLSurfaceView.MyGLSurfaceView
+        android:id="@+id/mSurfaceView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+	<Button
+		android:id="@+id/btnnext"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="下一张"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentEnd="true"/>
+
+	<Button
+		android:id="@+id/unit_inc"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/btnnext"
+		android:layout_alignStart="@+id/btnnext"
+		android:layout_below="@+id/btnnext"
+		android:text="单位增"/>
+
+	<Button
+		android:id="@+id/unit_dec"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignEnd="@+id/unit_inc"
+		android:layout_alignRight="@+id/unit_inc"
+		android:layout_below="@+id/unit_inc"
+		android:text="单位减"/>
+
+
+	<Button
+		android:id="@+id/btnsave"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:text="保存" />
+
+	<Button
+        android:id="@+id/btnAngleInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="角度+"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+		
+	<Button
+        android:id="@+id/btnAngleDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="角度-"
+        android:layout_below="@+id/btnAngleInc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+	<Button
+        android:id="@+id/btnWidthInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宽度+"
+        android:layout_below="@+id/btnAngleDec"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"/>
+		
+        
+	<Button
+        android:id="@+id/btnWidthDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宽度-"
+        android:layout_below="@+id/btnWidthInc"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"/>
+
+	<Button
+		android:id="@+id/btnViewInc"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="view++"
+		android:layout_below="@+id/btnWidthDec"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"/>
+
+	<Button
+		android:id="@+id/btnViewDec"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="view--"
+		android:layout_below="@+id/btnViewInc"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"/>
+    	    
+    <TextView 
+        android:id="@+id/text_parameter"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true"
+		android:textColor="#FF0000"
+		android:textSize="60px"
+		android:text="角度："/>
+
+	<TextView
+		android:id="@+id/text_unit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:textColor="#FF0000"
+		android:textSize="60px"
+		android:text="0.001"/>
+
+</RelativeLayout>
