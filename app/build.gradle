@@ -1,15 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 28
     aaptOptions.cruncherEnabled = false
     aaptOptions.useNewCruncher = false
 
     defaultConfig {
         applicationId "com.stereo.ManualCalib"
-        minSdkVersion 16
-        targetSdkVersion 21
+        minSdkVersion 17
+        targetSdkVersion 28
 
         ndk {
             // 设置支持的SO库架构
